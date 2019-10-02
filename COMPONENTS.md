@@ -2,7 +2,6 @@
 graph TB
 
 PB>ProgressBar]
-FL>FormLayout]
 B{Button}
 O{Overlay}
 LM{ListMixin}
@@ -17,7 +16,6 @@ C{Checkbox}
 DT>Details]
 N((Notification))
 
-FL --> CR[CRUD]
 PB --> U[Upload]
 
 B --> U[Upload]
@@ -27,8 +25,6 @@ B --> MB[MenuBar]
 B --> LG[Login]
 B --> DP(DatePicker)
 
-CB --> TP(TimePicker)
-
 O --> D(Dialog)
 O --> LG
 O --> DP
@@ -36,7 +32,11 @@ O --> CM(ContextMenu)
 O --> CB(ComboBox)
 O --> S(Select)
 
+CB --> TP(TimePicker)
+
 D --> CD
+FL>FormLayout]
+FL --> CR[CRUD]
 
 T --> LG
 T --> DP
