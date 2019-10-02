@@ -29,9 +29,9 @@ CSM --> S
 
 B --> U[Upload]
 B --> CD(ConfirmDialog)
+B --> MB[MenuBar]
 B --> AL[AppLayout]
 B --> LG[Login]
-B --> MB[MenuBar]
 B --> DP
 
 O{Overlay}
@@ -42,33 +42,32 @@ O --> CM
 O --> CB
 O --> S
 
-CB --> TP
-
 CM --> MB
 
 D --> CD
 
 T --> LG
-T --> DP
-T --> CB
 T --> S
+T --> DP
 T --> TP
+T --> CB
+
+CB --> TP
 
 DP --> DTP[DateTimePicker]
 TP --> DTP
 
 CD --> RTE[RichTextEditor]
 
-S --> GP
+S --> GP[GridPro]
 C --> GP
-T --> GP[GridPro]
+T --> GP
 
 CF>CustomField]
 CF --> DTP
 
 C --> G(Grid)
 T --> G
-
 
 CD --> CR[CRUD]
 D --> CR
@@ -78,5 +77,4 @@ FL>FormLayout]
 FL --> CR
 
 G --> CR
-
 ```
