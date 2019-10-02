@@ -1,11 +1,11 @@
-# Components flowcharts
+# Components flowchart
 
 This is a flowchart created using [mermaid](https://github.com/knsv/mermaid).
 
 ## Setup
 
 1. Install [Mermaid Preview](https://github.com/vstirbu/vscode-mermaid-preview) VSCode extension
-2. Open `chart.mmd`
+2. Open `COMPONENTS.md`
 3. Go to Command Palette: <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>
 4. Choose "Preview Mermaid"
 5. Focus editor tab with chart
