@@ -20,10 +20,12 @@ CSM --> DT(Details)
 DT --> A[Accordion]
 
 CSM --> B(Button)
-B --> AL[AppLayout]
 B --> U[Upload]
-B --> CD(ConfirmDialog)
+B --> AL[AppLayout]
 B --> LG[Login]
+
+B --> RTE[RichTextEditor]
+B --> CD(ConfirmDialog)
 B --> DP
 
 CSM --> C(Checkbox)
@@ -34,8 +36,8 @@ CSM --> TP(TimePicker)
 CSM --> S
 
 O{Overlay}
-O --> D(Dialog)
 O --> LG
+O --> D(Dialog)
 O --> DP
 O --> CM
 O --> CB
@@ -59,8 +61,6 @@ CB --> TP
 DP --> DTP[DateTimePicker]
 TP --> DTP
 
-CD --> RTE[RichTextEditor]
-
 S --> GP[GridPro]
 C --> GP
 T --> GP
@@ -70,6 +70,9 @@ CF --> DTP
 
 C --> G(Grid)
 T --> G
+
+CD --> RTE
+T --> RTE
 
 CD --> CR[CRUD]
 D --> CR
