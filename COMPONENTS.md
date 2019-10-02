@@ -28,8 +28,6 @@ B --> LG[Login]
 B --> DP(DatePicker)
 
 CB --> TP(TimePicker)
-CF>CustomField]
-CF --> DTP[DateTimePicker]
 
 O --> D(Dialog)
 O --> LG
@@ -49,13 +47,16 @@ T --> TP
 LB --> CM
 LB --> S
 
-DP --> DTP
+DP --> DTP[DateTimePicker]
 TP --> DTP
 
 CD --> RTE[RichTextEditor]
 
 S --> GP
 T --> GP
+
+CF>CustomField]
+CF --> DTP
 
 C --> G(Grid)
 T --> G
