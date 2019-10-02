@@ -20,19 +20,18 @@ CSM --> DT(Details)
 DT --> A[Accordion]
 
 CSM --> B(Button)
+B --> AL[AppLayout]
+B --> U[Upload]
+B --> CD(ConfirmDialog)
+B --> LG[Login]
+B --> DP
+
 CSM --> C(Checkbox)
 CSM --> T(TextField)
 CSM --> CB(ComboBox)
 CSM --> DP(DatePicker)
 CSM --> TP(TimePicker)
 CSM --> S
-
-B --> U[Upload]
-B --> CD(ConfirmDialog)
-B --> MB[MenuBar]
-B --> AL[AppLayout]
-B --> LG[Login]
-B --> DP
 
 O{Overlay}
 O --> D(Dialog)
@@ -42,9 +41,12 @@ O --> CM
 O --> CB
 O --> S
 
+B --> MB[MenuBar]
 CM --> MB
 
 D --> CD
+
+FL>FormLayout]
 
 T --> LG
 T --> S
@@ -73,8 +75,6 @@ CD --> CR[CRUD]
 D --> CR
 G --> GP
 
-FL>FormLayout]
 FL --> CR
-
 G --> CR
 ```
