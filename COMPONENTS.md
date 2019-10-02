@@ -1,73 +1,73 @@
 ```mermaid
 graph TB
 
-B{Button}
 PB>ProgressBar]
+B{Button}
 O{Overlay}
 T{TextField}
 C{Checkbox}
 
 I{Item}
-DT{Details}
+DT>Details]
 LM{ListMixin}
 N((Notification))
 
-B --> AL[AppLayout]
+PB --> U[Upload]
 
 B --> U[Upload]
-PB --> U
-
+B --> AL[AppLayout]
+B --> CD(ConfirmDialog)
+B --> MB[MenuBar]
 B --> LG[Login]
-O --> LG
-T --> LG
+B --> DP(DatePicker)
 
 CB --> TP(TimePicker)
 
 O --> D(Dialog)
-O --> CM(ContextMenu)
+O --> LG
+O --> DP
 O --> CB(ComboBox)
-O --> DP(DatePicker)
+O --> CM(ContextMenu)
 O --> S(Select)
 
-D --> CD(ConfirmDialog)
-B --> CD
-
-B --> DP
+D --> CD
 
 LM --> LB(ListBox)
 LM --> TB(Tabs)
 
 I --> LB
 I --> TB
-LB --> S
 LB --> CM
+LB --> S
 
+T --> LG
 T --> DP
 T --> CB
-T --> S
 T --> TP
-T --> G(Grid)
+T --> S
+
+FL>FormLayout] --> CR[CRUD]
 
 CF>CustomField] --> DTP[DateTimePicker]
 DP --> DTP
 TP --> DTP
 
-C --> G[Grid]
-
 CD --> RTE[RichTextEditor]
 
-D --> CR[CRUD]
-CD --> CR
-G --> CR
-FL>FormLayout] --> CR
-
-G --> GP[GridPro]
 S --> GP
 T --> GP
+
+C --> G(Grid)
+T --> G
+
 C --> GP
 
-CM --> MB[MenuBar]
-B --> MB
+CM --> MB
 
 DT --> A[Accordion]
+
+D --> CR
+G --> GP[GridPro]
+CD --> CR
+G --> CR
 ```
