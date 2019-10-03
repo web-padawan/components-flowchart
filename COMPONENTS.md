@@ -1,11 +1,15 @@
 ```mermaid
 graph TB
+OL((OrderedLayout))
+SL((SplitLayout))
 
 PB>ProgressBar]
 PB --> U[Upload]
 
 LM{ListMixin}
 I{Item}
+
+N((Notification))
 
 I --> TB(Tabs)
 I --> LB(ListBox)
@@ -16,6 +20,7 @@ LB --> S(Select)
 
 CSM{ControlState}
 
+CSM --> RB(RadioButton)
 CSM --> DT(Details)
 DT --> A[Accordion]
 
@@ -70,6 +75,9 @@ CF --> DTP
 
 C --> G(Grid)
 T --> G
+
+BO((Board))
+CH((Charts))
 
 CD --> RTE
 T --> RTE
