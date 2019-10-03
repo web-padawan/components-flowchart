@@ -1,12 +1,8 @@
 ```mermaid
 graph TB
-PB(ProgressBar)
-PB --> U(Upload)
-
+N((Notification))
 LM[ListMixin]
 IM[ItemMixin]
-
-N((Notification))
 
 IM --> TB(Tabs)
 LM --> TB
@@ -18,9 +14,15 @@ CSM --> DT(Details)
 RB --> RG(RadioGroup)
 
 DT --> A(Accordion)
-BM[ButtonMixin]
+
+PB(ProgressBar)
+PB --> U(Upload)
+
+CSM --> BM[ButtonMixin]
+BM --> U
 BM --> AL(AppLayout)
+BM --> LG(Login)
 
 OB[OverlayBase]
-OB --> LG(Login)
+OB --> LG
 ```
