@@ -1,7 +1,5 @@
 ```mermaid
 graph TB
-SL((SplitLayout))
-
 PB(ProgressBar)
 PB --> U(Upload)
 
