@@ -12,11 +12,9 @@ This is a flowchart created using [mermaid](https://github.com/knsv/mermaid).
 
 ## Syntax
 
-- Use `{rhombus}` for "root" components (with no component dependencies).
 - Use `[square]` for "leaf" components (with no dependents).
-- Use `(rounded square)` for intermediate components.
 - Use `((circle))` for components with no dependencies / dependents.
-- Use `>asymmetric shape]` for components with only one dependent.
+- Use `(rounded square)` for all the other components.
 
 ## Tips
 

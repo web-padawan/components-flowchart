@@ -3,25 +3,25 @@ graph TB
 OL((OrderedLayout))
 SL((SplitLayout))
 
-PB>ProgressBar]
+PB[ProgressBar]
 PB --> U[Upload]
 
-LM{ListMixin}
-I{Item}
+LM(ListMixin)
+I(Item)
 
 N((Notification))
 
-I --> TB(Tabs)
+I --> TB[Tabs]
 I --> LB(ListBox)
 LM --> TB
 LM --> LB
 LB --> CM(ContextMenu)
 LB --> S(Select)
 
-CSM{ControlState}
+CSM(ControlStateMixin)
 
-CSM --> RB(RadioButton)
 CSM --> DT(Details)
+CSM --> RB(RadioButton)
 DT --> A[Accordion]
 
 CSM --> B(Button)
@@ -40,7 +40,7 @@ CSM --> DP(DatePicker)
 CSM --> TP(TimePicker)
 CSM --> S
 
-O{Overlay}
+O[Overlay]
 O --> LG
 O --> D(Dialog)
 O --> DP
@@ -53,7 +53,7 @@ CM --> MB
 
 D --> CD
 
-FL>FormLayout]
+FL(FormLayout)
 
 T --> LG
 T --> S
@@ -70,7 +70,7 @@ S --> GP[GridPro]
 C --> GP
 T --> GP
 
-CF>CustomField]
+CF(CustomField)
 CF --> DTP
 
 C --> G(Grid)
